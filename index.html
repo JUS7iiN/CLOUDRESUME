@@ -1,26 +1,138 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
+<html style="overflow: auto;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="icon" href="resume_files/aws.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="resume_files/bootstrap.min.css" rel="stylesheet">
+    <link href="resume_files/ionicons.min.css" rel="stylesheet">
+    <link href="resume_files/animate.min.css" rel="stylesheet">
+    <link href="resume_files/aos.css" rel="stylesheet">
+
+    <!-- main style -->
     <link rel="stylesheet" href="styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	    <script src="resume_files/jquery.js"></script> 
+    <script src="resume_files/jquery.form_002.js"></script> 
+ 
+    <script> 
+        // wait for the DOM to be loaded 
+        $(document).ready(function() { 
+            // bind 'myForm' and provide a simple callback function 
+            $('#myForm').ajaxForm(function() { 
+                alert("Thank you for your comment!"); 
+            }); 
+        }); 
+    </script> 
 </head>
 <body>
 
-<!-- Side navigation -->
-<div class="sidenav">
-    <img class="profileIMG" src="img/eggodoggo.png" alt="eggodoggo" width="120" height="120">
-    <a href="#">About</a>
-    <a href="#">Certifications</a>
-    <a href="#">Experience</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+<!-- header -->
+<header class="navbar-fixed-top bg-nav">
+    <nav>
+        <ul>
+            <li><a href="#about" class="">About</a></li>
+            <li><a href="#experience" class="">Certifications & Experience</a></li>
+            <li><a href="#projects" class="">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ./header -->
+
+<!-- home -->
+<div class="section" id="home" data-stellar-background-ratio="0.5" style="background-position: 0px 442px;">
+    <div class="container">
+        <div class="disply-table">
+            <div class="table-cell aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+                <h4>Justin Griffith</h4>
+          <h1>Cloud Engineer&nbsp;</h1> 
+          </div>
+        </div>
+    </div>
 </div>
+<!-- ./home -->
 
-<div class="main">
-    <h1>Justin <span class="last-name">Griffith</span></h1>
-    <p>My first paragraph.</p>
-    <img src="img/eggodoggo.png" alt="eggodoggo" width="360" height="360">
+<!-- about -->
+<div class="section active" id="about">
+    <div class="container">
+        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up">
+            <h1 class="size-50">About me</h1>
+            <div class="h-50"></div>
+            <p>My name is Justin Griffith. I enjoy solving and troubleshooting problems with the tools available.</p>
+            <p>I have been involved with computers for as long as I can remember. I recall my first computer being a Windows XP machine</p>
+            <p>Currently holding Amazon certifications for Cloud Practitioner, Solutions Architect, and SysOps. I plan to not stop there as continual growth and development is a constant goal of mine.</p>
+        <a href="https://www.linkedin.com/in/justin-griffith-8a1306227/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="https://www.linkedin.com/in/justin-griffith-8a1306227/" width="36" height="36"></a>
+        <a href="https://github.com/JUS7iiN" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="https://github.com/JUS7iiN" width="36" height="36"></a>
+        <a href="mailto:jgriffithj16@gmail.com"><img src="img/gmail.png" alt="jgriffithj16@gmail.com" width="36" height="36"></a>
+
+<div class="h-50"></div>
+        </div>
+        <div class="col-md-6 about-img-div">
+            <div class="about-border aos-init aos-animate" data-aos="fade-up" data-aos-delay=".5"></div>
+            <img src="img/xp.png" width="400" height="400" align="right">
+        </div>
+    </div>
 </div>
+<!-- ./about -->
 
+<!-- certifications-experience -->
+<div class="section" id="experience">
+    <div class="container">
+        <div class="col-md-12">
+                <h1 class="size-50">Certifications & Experience</h1>
+                <div class="h-50"></div>
+        </div>
+        <div class="col-md-12">
+            <ul class="timeline">
+                <li class="timeline-event aos-init aos-animate" data-aos="fade-up">
+                    <label class="timeline-event-icon"></label>
+                    <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">July 2019 - Present</p>
+                        <h3><strong>EDG Inc.</strong></h3>
+                        <h4>Help Desk Technician</h4>
+                            <p>- Troubleshooting tier one and two including hardware, software, networking, and mobile solutions for PC, iPhone, and Samsung Galaxy incidents through phone or email correspondence.
+                                <br>- VMWare virtual machine imaging, creation, and troubleshooting.
+                                <br>- Group policy and user management using Active Directory.
+                                <br>- Management of end-user assets.
+                                &nbsp;</p>      
+                    </div>
+                </li>
+                <li class="timeline-event aos-init aos-animate" data-aos="fade-up" data-aos-delay=".2">
+                    <label class="timeline-event-icon"></label>
+                    <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">March - July 2022</p>
+                        <h3><strong>Certifications</strong></h3>
+                        <a href="https://www.credly.com/badges/a89d9a90-12b1-4f5d-8070-90630459cce6/public_url"><img src="img/aws-prac.png"></a>
+                        <a href="https://www.credly.com/badges/4264ce35-17fc-4611-8729-f2ce55cfd349/public_url"><img src="img/aws-saa.png"></a>
+                        <a href="https://www.credly.com/badges/671bc70c-b630-49bb-915d-48b661e82349/public_url"><img src="img/aws-sysops.png"></a>
+                    </div>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ./certifications-experience -->
 
+<!-- projects-->
+<div class="section active" id="projects">
+    <div class="container">
+        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up">
+            <h1 class="size-50">Projects</h1> 
+            <br>
+            <h4><a href="cloudresumechallenge.html">Cloud Resume Challenge</a></h4>
+    </div>
+</div>
+<!-- ./projects -->
 
 </body>
